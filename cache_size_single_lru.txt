@@ -1,0 +1,504 @@
+==========
+
+Model = llama2_7b | Dataset = longbench
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/longbench.json",prompt average 60.85, gen average 17.65
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=106.63593779257693, p99=202.21929380058143, max=213.91379335778038)
+prompt_time=MetricData(p50=101.14454019825502, p99=195.32848099219544, max=195.32848099219544)
+decode_time=MetricData(p50=0.7360585401388544, p99=3.5359854518815705, max=4.3625785157220776)
+decode_max_time=MetricData(p50=2.1797259945187477, p99=5.3165039453071765, max=6.428582559741329)
+prompt_idle_time=MetricData(p50=0.9995546564287638, p99=0.9998769394564981, max=0.9998993299887172)
+decode_idle_time=MetricData(p50=0.9808831430649061, p99=0.9959966654166115, max=0.9967585869697059)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.15730173351909799, p99=1.1560474812486856, max=1.1648828659498878)
+cache_time=MetricData(p50=1.6406749999999999, p99=23.289453499999983, max=27.00045999999999)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 95.02483566622915
+Max prompt latency: 195.32848099219544
+Min prompt latency: 0.07031341411517215
+Deviation prompt latency: 60.77519826914091
+Average generation latency: 0.9143867390945284
+Max generation latency: 4.3625785157220776
+Min generation latency: 0.11343686362954827
+Deviation generation latency: 0.603446124785043
+total time: 213.91379335778038
+Thoughput: 1.4024341081093195 r/s, 85.3381154784521 token/s
+Total preemptions: 442
+
+Cache Statistics:
+Cache Hits: 5
+Cache Misses: 295
+Cache Hit Rate: 1.67%
+Total Allocations: 300
+Cache Evictions: 282
+Prompt SLO Good Throughput: 34 r, 0.15894253225238955 r/s
+Max-Decode SLO Good Throughput: 0 r, 0.0 r/s
+Prompt and Max-Decode SLO Good Throughput: 0 r, 0.0 r/s
+Decode SLO Good Throughput: 1 r, 0.004674780360364398 r/s
+Prompt and Decode SLO Good Throughput: 1 r, 0.004674780360364398 r/s
+==========
+
+Model = llama2_7b | Dataset = needle
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/needle.json",prompt average 1020.0, gen average 5.0
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=36.74440189977665, p99=202.08894113428659, max=213.91379335778038)
+prompt_time=MetricData(p50=27.19017528012801, p99=194.95837359852206, max=195.32848099219544)
+decode_time=MetricData(p50=1.5084551528589938, p99=2.965199189175303, max=4.3625785157220776)
+decode_max_time=MetricData(p50=4.067650955941531, p99=7.731534932892368, max=7.731534932892368)
+prompt_idle_time=MetricData(p50=0.9794798407030287, p99=0.9998762721009545, max=0.9998993299887172)
+decode_idle_time=MetricData(p50=0.9923664982099218, p99=0.9992454900579667, max=0.9992782007346339)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.5655939639122006, p99=5.75113364511993, max=5.75113364511993)
+cache_time=MetricData(p50=1.42191, p99=21.908203499999992, max=27.00045999999999)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 16.613980345881075
+Max prompt latency: 36.994603131599895
+Min prompt latency: 5.635940046457144
+Deviation prompt latency: 8.936296861382651
+Average generation latency: 2.2313090041179513
+Max generation latency: 3.114653346459253
+Min generation latency: 0.001498503630639192
+Deviation generation latency: 0.4518469759514748
+total time: 37.00059714612245
+Thoughput: 8.107977252778989 r/s, 8270.136797834568 token/s
+Total preemptions: 66
+
+Cache Statistics:
+Cache Hits: 299
+Cache Misses: 1
+Cache Hit Rate: 99.67%
+Total Allocations: 300
+Cache Evictions: 0
+Prompt SLO Good Throughput: 134 r, 3.621563172907948 r/s
+Max-Decode SLO Good Throughput: 2 r, 0.054053181685193255 r/s
+Prompt and Max-Decode SLO Good Throughput: 0 r, 0.0 r/s
+Decode SLO Good Throughput: 3 r, 0.08107977252778989 r/s
+Prompt and Decode SLO Good Throughput: 1 r, 0.027026590842596628 r/s
+==========
+
+Model = llama2_7b | Dataset = sharegpt
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/sharegpt.json",prompt average 99.8, gen average 433.2
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+==========
+
+Model = llama2_7b | Dataset = bookcorpus
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/bookcorpus.json",prompt average 5.85, gen average 5.4
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=26.18005960054837, p99=200.1265441252112, max=385.4171873441782)
+prompt_time=MetricData(p50=17.215070965589426, p99=190.34218658096665, max=195.32848099219544)
+decode_time=MetricData(p50=0.8403350381882527, p99=2.630274619811815, max=4.3625785157220776)
+decode_max_time=MetricData(p50=1.9879542985278178, p99=7.5766762171191555, max=9.502391436453241)
+prompt_idle_time=MetricData(p50=0.9974483499800846, p99=0.9998609767636416, max=0.9998993299887172)
+decode_idle_time=MetricData(p50=0.9855613156885611, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.17684685812576412, p99=5.7349760995546255, max=5.75113364511993)
+cache_time=MetricData(p50=0.75003, p99=21.625027799999994, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 11.650408263176837
+Max prompt latency: 26.213462652145154
+Min prompt latency: 0.01962881917107851
+Deviation prompt latency: 7.83041818009049
+Average generation latency: 0.38351865555518166
+Max generation latency: 1.8505566986571367
+Min generation latency: 0
+Deviation generation latency: 0.31938503073345653
+total time: 27.913038658730308
+Thoughput: 10.747665407118603 r/s, 62.87384263164383 token/s
+Total preemptions: 109
+
+Cache Statistics:
+Cache Hits: 97
+Cache Misses: 203
+Cache Hit Rate: 32.33%
+Total Allocations: 300
+Cache Evictions: 190
+Prompt SLO Good Throughput: 336 r, 12.037385255972836 r/s
+Max-Decode SLO Good Throughput: 49 r, 1.7554520164960385 r/s
+Prompt and Max-Decode SLO Good Throughput: 29 r, 1.0389409893547983 r/s
+Decode SLO Good Throughput: 66 r, 2.364486389566093 r/s
+Prompt and Decode SLO Good Throughput: 42 r, 1.5046731569966045 r/s
+==========
+
+Model = llama2_7b | Dataset = wikipedia
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/wikipedia.json",prompt average 3.9, gen average 87.3
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+==========
+
+Model = llama2_7b | Dataset = opencompass
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/opencompass.json",prompt average 49.2, gen average 11.75
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=27.834789360482958, p99=380.24829221275075, max=482.89863319019236)
+prompt_time=MetricData(p50=24.013498963685052, p99=323.64509153563984, max=344.675984377091)
+decode_time=MetricData(p50=0.5862106370507396, p99=3.6162215037194536, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.6280326541589965, p99=10.518097648776914, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9985073971318161, p99=0.9999393048588503, max=0.9999430579581354)
+decode_idle_time=MetricData(p50=0.9782765631123097, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.1873155111574385, p99=5.734975642370797, max=5.75113364511993)
+cache_time=MetricData(p50=1.18752, p99=74.99062760000024, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 38.68797691424414
+Max prompt latency: 77.30040220355957
+Min prompt latency: 0.06339902025919694
+Deviation prompt latency: 23.205633158194466
+Average generation latency: 0.3392875999456442
+Max generation latency: 0.9376836985128039
+Min generation latency: 0.11008593493846212
+Deviation generation latency: 0.1161166743009832
+total time: 80.38878122065843
+Thoughput: 3.7318640169022186 r/s, 183.60770963158916 token/s
+Total preemptions: 268
+
+Cache Statistics:
+Cache Hits: 5
+Cache Misses: 295
+Cache Hit Rate: 1.67%
+Total Allocations: 300
+Cache Evictions: 282
+Prompt SLO Good Throughput: 423 r, 5.261928263832128 r/s
+Max-Decode SLO Good Throughput: 49 r, 0.6095377894273624 r/s
+Prompt and Max-Decode SLO Good Throughput: 29 r, 0.3607468549672145 r/s
+Decode SLO Good Throughput: 73 r, 0.9080869107795398 r/s
+Prompt and Decode SLO Good Throughput: 47 r, 0.5846586959813476 r/s
+==========
+
+Model = mistral_7b | Dataset = longbench
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/longbench.json",prompt average 60.85, gen average 17.65
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=36.74440189977665, p99=363.6192669247075, max=482.89863319019236)
+prompt_time=MetricData(p50=27.19017528012801, p99=285.36022642523415, max=344.675984377091)
+decode_time=MetricData(p50=0.6363472621083943, p99=3.5566712808056913, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.7796667344275239, p99=10.382914065455623, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9988571542365323, p99=0.9999312233170846, max=0.9999430579581354)
+decode_idle_time=MetricData(p50=0.9797621580155356, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.1768888788301108, p99=5.71534345510202, max=5.75113364511993)
+cache_time=MetricData(p50=1.21877, p99=67.06293460000025, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 94.5107403827344
+Max prompt latency: 194.30128752888487
+Min prompt latency: 0.06522927949978755
+Deviation prompt latency: 60.46411977033137
+Average generation latency: 0.9099825053665148
+Max generation latency: 4.3512676762851115
+Min generation latency: 0.11220569057670891
+Deviation generation latency: 0.6013990920673126
+total time: 212.7852915819883
+Thoughput: 1.4098718843280904 r/s, 85.7907041613643 token/s
+Total preemptions: 442
+
+Cache Statistics:
+Cache Hits: 5
+Cache Misses: 295
+Cache Hit Rate: 1.67%
+Total Allocations: 300
+Cache Evictions: 282
+Prompt SLO Good Throughput: 457 r, 2.1477048371264575 r/s
+Max-Decode SLO Good Throughput: 49 r, 0.23027907444025478 r/s
+Prompt and Max-Decode SLO Good Throughput: 29 r, 0.13628761548504872 r/s
+Decode SLO Good Throughput: 74 r, 0.3477683981342623 r/s
+Prompt and Decode SLO Good Throughput: 48 r, 0.22557950149249445 r/s
+==========
+
+Model = mistral_7b | Dataset = needle
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/needle.json",prompt average 1020.0, gen average 5.0
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=32.38810586151861, p99=347.7703838603533, max=482.89863319019236)
+prompt_time=MetricData(p50=26.563493569770888, p99=195.32848099219544, max=344.675984377091)
+decode_time=MetricData(p50=0.8407841963306438, p99=3.5267455300135557, max=6.907865733867942)
+decode_max_time=MetricData(p50=2.145149609725401, p99=9.854340705171467, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9983195083493525, p99=0.9999033650893526, max=0.9999430579581354)
+decode_idle_time=MetricData(p50=0.9851401203804004, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.21487773783802597, p99=5.71534345510202, max=5.75113364511993)
+cache_time=MetricData(p50=1.31255, p99=55.53367600000039, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 16.067659354822897
+Max prompt latency: 36.34586119826392
+Min prompt latency: 5.185711681072528
+Deviation prompt latency: 8.86395680110079
+Average generation latency: 2.223645213588495
+Max generation latency: 3.086345543211571
+Min generation latency: 0.0012881014995915763
+Deviation generation latency: 0.44962309314857113
+total time: 36.351013604262285
+Thoughput: 8.252864782973313 r/s, 8417.922078632779 token/s
+Total preemptions: 66
+
+Cache Statistics:
+Cache Hits: 299
+Cache Misses: 1
+Cache Hit Rate: 99.67%
+Total Allocations: 300
+Cache Evictions: 0
+Prompt SLO Good Throughput: 557 r, 15.322818947053785 r/s
+Max-Decode SLO Good Throughput: 51 r, 1.4029870131054631 r/s
+Prompt and Max-Decode SLO Good Throughput: 29 r, 0.7977769290207536 r/s
+Decode SLO Good Throughput: 76 r, 2.0907257450199057 r/s
+Prompt and Decode SLO Good Throughput: 48 r, 1.32045836527573 r/s
+==========
+
+Model = mistral_7b | Dataset = sharegpt
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/sharegpt.json",prompt average 99.8, gen average 433.2
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+==========
+
+Model = mistral_7b | Dataset = bookcorpus
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/bookcorpus.json",prompt average 5.85, gen average 5.4
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=26.267213868572952, p99=334.20928067239686, max=482.89863319019236)
+prompt_time=MetricData(p50=20.370669155442087, p99=195.32848099219544, max=344.675984377091)
+decode_time=MetricData(p50=0.6643709710914194, p99=3.3075215927050152, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.7665589395262034, p99=9.820572888119495, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9983195083493525, p99=0.9998991928095096, max=0.9999430579581354)
+decode_idle_time=MetricData(p50=0.9827721659153481, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.1796648438652803, p99=5.7150587187831725, max=5.75113364511993)
+cache_time=MetricData(p50=0.90628, p99=53.36045919999983, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 11.515992652804787
+Max prompt latency: 25.927661442881877
+Min prompt latency: 0.018743318769149253
+Deviation prompt latency: 7.742418627656383
+Average generation latency: 0.3800210374705688
+Max generation latency: 1.8381933897084863
+Min generation latency: 0
+Deviation generation latency: 0.31676120617988146
+total time: 27.607611843972776
+Thoughput: 10.866568310778943 r/s, 63.56942461805682 token/s
+Total preemptions: 109
+
+Cache Statistics:
+Cache Hits: 97
+Cache Misses: 203
+Cache Hit Rate: 32.33%
+Total Allocations: 300
+Cache Evictions: 190
+Prompt SLO Good Throughput: 759 r, 27.492417826270728 r/s
+Max-Decode SLO Good Throughput: 98 r, 3.549745648187788 r/s
+Prompt and Max-Decode SLO Good Throughput: 58 r, 2.1008698734172624 r/s
+Decode SLO Good Throughput: 141 r, 5.107287106066103 r/s
+Prompt and Decode SLO Good Throughput: 91 r, 3.296192387602946 r/s
+==========
+
+Model = mistral_7b | Dataset = wikipedia
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/wikipedia.json",prompt average 3.9, gen average 87.3
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+==========
+
+Model = mistral_7b | Dataset = opencompass
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/opencompass.json",prompt average 49.2, gen average 11.75
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=27.5673992088444, p99=379.9889371008327, max=482.89863319019236)
+prompt_time=MetricData(p50=24.013498963685052, p99=327.76471966876795, max=344.675984377091)
+decode_time=MetricData(p50=0.5832248665571916, p99=3.617606116378073, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.6266791391316815, p99=10.507520377269632, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9985609370681221, p99=0.9999418091102541, max=0.9999455184542265)
+decode_idle_time=MetricData(p50=0.9791936786833882, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.17684685812576412, p99=5.7150587187831725, max=5.75113364511993)
+cache_time=MetricData(p50=1.18752, p99=75.39434699999987, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 38.35285296297637
+Max prompt latency: 76.64675293888857
+Min prompt latency: 0.058879789489966174
+Deviation prompt latency: 23.01167230542958
+Average generation latency: 0.3366865286474401
+Max generation latency: 0.9317998262651468
+Min generation latency: 0.10849619897382379
+Deviation generation latency: 0.11539240573748219
+total time: 79.69946311482364
+Thoughput: 3.764140789352466 r/s, 185.19572683614132 token/s
+Total preemptions: 268
+
+Cache Statistics:
+Cache Hits: 5
+Cache Misses: 295
+Cache Hit Rate: 1.67%
+Total Allocations: 300
+Cache Evictions: 282
+Prompt SLO Good Throughput: 846 r, 10.614877025973954 r/s
+Max-Decode SLO Good Throughput: 98 r, 1.2296193245218054 r/s
+Prompt and Max-Decode SLO Good Throughput: 58 r, 0.7277338859414767 r/s
+Decode SLO Good Throughput: 148 r, 1.8569761227472164 r/s
+Prompt and Decode SLO Good Throughput: 96 r, 1.204525052592789 r/s
+==========
+
+Model = internlm2_7b | Dataset = longbench
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/longbench.json",prompt average 60.85, gen average 17.65
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=33.14360159176367, p99=378.8792294849212, max=482.89863319019236)
+prompt_time=MetricData(p50=26.563493569770888, p99=317.0916018974755, max=344.675984377091)
+decode_time=MetricData(p50=0.6073673607453725, p99=3.602892807341522, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.7071846203188632, p99=10.428346007132903, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9986859216595747, p99=0.9999382904597364, max=0.9999455184542265)
+decode_idle_time=MetricData(p50=0.9802028215080989, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.17435928539886372, p99=5.687683833449337, max=5.75113364511993)
+cache_time=MetricData(p50=1.18754, p99=72.12567000000011, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 94.5107403827344
+Max prompt latency: 194.30128752888487
+Min prompt latency: 0.06522927949978755
+Deviation prompt latency: 60.46411977033137
+Average generation latency: 0.9099825053665148
+Max generation latency: 4.3512676762851115
+Min generation latency: 0.11220569057670891
+Deviation generation latency: 0.6013990920673126
+total time: 212.7852915819883
+Thoughput: 1.4098718843280904 r/s, 85.7907041613643 token/s
+Total preemptions: 442
+
+Cache Statistics:
+Cache Hits: 5
+Cache Misses: 295
+Cache Hit Rate: 1.67%
+Total Allocations: 300
+Cache Evictions: 282
+Prompt SLO Good Throughput: 880 r, 4.135624194029065 r/s
+Max-Decode SLO Good Throughput: 98 r, 0.46055814888050955 r/s
+Prompt and Max-Decode SLO Good Throughput: 58 r, 0.27257523097009745 r/s
+Decode SLO Good Throughput: 149 r, 0.7002363692162848 r/s
+Prompt and Decode SLO Good Throughput: 97 r, 0.4558585759327492 r/s
+==========
+
+Model = internlm2_7b | Dataset = needle
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/needle.json",prompt average 1020.0, gen average 5.0
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=31.40070251122379, p99=363.9061047596121, max=482.89863319019236)
+prompt_time=MetricData(p50=25.421852258734265, p99=284.969841432304, max=344.675984377091)
+decode_time=MetricData(p50=0.7003104948657761, p99=3.531920462205377, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.8617082295658511, p99=10.367475295106827, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9984846968124909, p99=0.9999336996745822, max=0.9999455184542265)
+decode_idle_time=MetricData(p50=0.9835153806289924, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.19208381189041074, p99=5.687627131503719, max=5.75113364511993)
+cache_time=MetricData(p50=1.21878, p99=67.59417949999977, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 16.067659354822897
+Max prompt latency: 36.34586119826392
+Min prompt latency: 5.185711681072528
+Deviation prompt latency: 8.86395680110079
+Average generation latency: 2.223645213588495
+Max generation latency: 3.086345543211571
+Min generation latency: 0.0012881014995915763
+Deviation generation latency: 0.44962309314857113
+total time: 36.351013604262285
+Thoughput: 8.252864782973313 r/s, 8417.922078632779 token/s
+Total preemptions: 66
+
+Cache Statistics:
+Cache Hits: 299
+Cache Misses: 1
+Cache Hit Rate: 99.67%
+Total Allocations: 300
+Cache Evictions: 0
+Prompt SLO Good Throughput: 980 r, 26.959358291046154 r/s
+Max-Decode SLO Good Throughput: 100 r, 2.7509549276577707 r/s
+Prompt and Max-Decode SLO Good Throughput: 58 r, 1.5955538580415072 r/s
+Decode SLO Good Throughput: 151 r, 4.153941940763234 r/s
+Prompt and Decode SLO Good Throughput: 97 r, 2.668426279828038 r/s
+==========
+
+Model = internlm2_7b | Dataset = sharegpt
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/sharegpt.json",prompt average 99.8, gen average 433.2
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+==========
+
+Model = internlm2_7b | Dataset = bookcorpus
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/bookcorpus.json",prompt average 5.85, gen average 5.4
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=26.269211873413802, p99=362.08546058320894, max=482.89863319019236)
+prompt_time=MetricData(p50=21.700645883361474, p99=281.7428877553209, max=344.675984377091)
+decode_time=MetricData(p50=0.640174148097314, p99=3.5260791881500175, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.7006743382654363, p99=9.868450235461646, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9984846968124909, p99=0.9999306976021987, max=0.9999455184542265)
+decode_idle_time=MetricData(p50=0.9818223620656139, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.1759412736283372, p99=5.687626944727399, max=5.75113364511993)
+cache_time=MetricData(p50=1.03127, p99=66.50044000000005, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 11.515992652804787
+Max prompt latency: 25.927661442881877
+Min prompt latency: 0.018743318769149253
+Deviation prompt latency: 7.742418627656383
+Average generation latency: 0.3800210374705688
+Max generation latency: 1.8381933897084863
+Min generation latency: 0
+Deviation generation latency: 0.31676120617988146
+total time: 27.607611843972776
+Thoughput: 10.866568310778943 r/s, 63.56942461805682 token/s
+Total preemptions: 109
+
+Cache Statistics:
+Cache Hits: 97
+Cache Misses: 203
+Cache Hit Rate: 32.33%
+Total Allocations: 300
+Cache Evictions: 190
+Prompt SLO Good Throughput: 1182 r, 42.81427914446903 r/s
+Max-Decode SLO Good Throughput: 147 r, 5.324618472281682 r/s
+Prompt and Max-Decode SLO Good Throughput: 87 r, 3.1513048101258936 r/s
+Decode SLO Good Throughput: 216 r, 7.823929183760839 r/s
+Prompt and Decode SLO Good Throughput: 140 r, 5.07106521169684 r/s
+==========
+
+Model = internlm2_7b | Dataset = wikipedia
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/wikipedia.json",prompt average 3.9, gen average 87.3
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+==========
+
+Model = internlm2_7b | Dataset = opencompass
+
+[get_lens_from_file()] Read 300 reqs from dataset "./dataset/opencompass.json",prompt average 49.2, gen average 11.75
+[BlockManager] eviction policy=lru, shared_cache=True, debug=False
+request_time=MetricData(p50=27.535981410670804, p99=379.89912305733475, max=482.89863319019236)
+prompt_time=MetricData(p50=24.013498963685052, p99=332.0080000963205, max=344.675984377091)
+decode_time=MetricData(p50=0.5816376869440631, p99=3.6215552250633842, max=6.907865733867942)
+decode_max_time=MetricData(p50=1.6266791391316815, p99=10.502568522826266, max=13.627214125252863)
+prompt_idle_time=MetricData(p50=0.9985656517013016, p99=0.9999421357320077, max=0.9999455184542265)
+decode_idle_time=MetricData(p50=0.9795829164938692, p99=1.0, max=1.0)
+preprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+inference_time=MetricData(p50=0.17426186946353878, p99=5.687569035704965, max=5.75113364511993)
+cache_time=MetricData(p50=1.18752, p99=75.79806640000004, max=347.28335999999945)
+postprocess_time=MetricData(p50=0.0, p99=0.0, max=0.0)
+Average prompt latency: 38.35285296297637
+Max prompt latency: 76.64675293888857
+Min prompt latency: 0.058879789489966174
+Deviation prompt latency: 23.01167230542958
+Average generation latency: 0.3366865286474401
+Max generation latency: 0.9317998262651468
+Min generation latency: 0.10849619897382379
+Deviation generation latency: 0.11539240573748219
+total time: 79.69946311482364
+Thoughput: 3.764140789352466 r/s, 185.19572683614132 token/s
+Total preemptions: 268
+
+Cache Statistics:
+Cache Hits: 5
+Cache Misses: 295
+Cache Hit Rate: 1.67%
+Total Allocations: 300
+Cache Evictions: 282
+Prompt SLO Good Throughput: 1269 r, 15.92231553896093 r/s
+Max-Decode SLO Good Throughput: 147 r, 1.8444289867827082 r/s
+Prompt and Max-Decode SLO Good Throughput: 87 r, 1.091600828912215 r/s
+Decode SLO Good Throughput: 223 r, 2.7980113200853327 r/s
+Prompt and Decode SLO Good Throughput: 145 r, 1.8193347148536918 r/s
